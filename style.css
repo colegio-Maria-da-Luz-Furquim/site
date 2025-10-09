@@ -419,3 +419,7 @@ section {
     /* 1 coluna em celulares muito pequenos */
   }
 }
+
+.fundo-promo{
+    background: #ffcce1;
+}
