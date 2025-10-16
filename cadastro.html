@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Moda.ly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ < <header class="header">
+    <div class="header-container"><a href="index.html">
+      <img src="imagens/logo.png" alt="Moda.ly Logo" class="logo"></a>
+      <nav class="nav-menu">
+        <a href="#" class="nav-item" id="btnSobreNos">Sobre nós</a>
+        <a href="#novidade" class="nav-item">Novidades</a>
+        <a href="#roupas" class="nav-item">Roupas</a>
+        <a href="contato.html" class="nav-item">Contato</a>
+      </nav>
+
+
+      <!-- Substitua a div search-container atual por este código -->
+<div class="search-container">
+  <form onsubmit="return false;" class="search-form">
+    <input 
+      type="search" 
+      id="search-bar" 
+      name="query" 
+      placeholder="Pesquisar produtos..." 
+      aria-label="Pesquisar produtos"
+    >
+    <button type="button" class="search-button" aria-label="Buscar">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+  </form>
+</div>
+
+
+
+      <div class="user-actions">
+        <button class="login-btn" onclick="window.location.href='cadastro.html'">Entrar</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="form-container">
+    <h2>Cadastro</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <button type="submit" class="login-btn">Cadastrar</button>
+    </form>
+    <div class="form-links">
+      <span>Já tem uma conta?</span>
+      <a href="#">Entrar</a>
+    </div>
+    <div class="form-links" style="margin-top:16px;">
+      <span>Ou</span><br>
+      <a href="#">Criar conta</a>
+    </div>
+  </main>
+</body>
+</html>
